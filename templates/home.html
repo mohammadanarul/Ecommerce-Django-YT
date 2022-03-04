@@ -1,6 +1,192 @@
-<html>
-    <head></head>
-    <body>
-        <h1>hello world.</h1>
-    </body>
-    </html>
+{% extends 'base.html' %}
+{% load static %}
+{% load static %}
+{% block head_title %}Home{% endblock head_title %}
+
+{% block content %}
+  <!-- site__body -->
+  <div class="site__body">
+
+    <!-- .block-slideshow -->
+    <div class="block-slideshow block-slideshow--layout--with-departments block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9 offset-lg-3">
+                    <div class="block-slideshow__body">
+                        <div class="owl-carousel">
+                            <a class="block-slideshow__slide" href="#">
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
+                                    style="background-image: url('{% static "images/slides/slide-1.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
+                                    style="background-image: url('{% static "images/slides/slide-1-mobile.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-content">
+                                    <div class="block-slideshow__slide-title">Big choice of<br>Plumbing products
+                                    </div>
+                                    <div class="block-slideshow__slide-text">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis
+                                        molestie.</div>
+                                    <div class="block-slideshow__slide-button"><span
+                                            class="btn btn-primary btn-lg">Shop Now</span></div>
+                                </div>
+                            </a>
+
+                            <a class="block-slideshow__slide" href="#">
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
+                                    style="background-image: url('{% static "images/slides/slide-2.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
+                                    style="background-image: url('{% static "images/slides/slide-2-mobile.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-content">
+                                    <div class="block-slideshow__slide-title">Screwdrivers<br>Professional Tools
+                                    </div>
+                                    <div class="block-slideshow__slide-text">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis
+                                        molestie.</div>
+                                    <div class="block-slideshow__slide-button"><span
+                                            class="btn btn-primary btn-lg">Shop Now</span></div>
+                                </div>
+                            </a>
+
+                            <a class="block-slideshow__slide" href="#">
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
+                                    style="background-image: url('{% static "images/slides/slide-3.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
+                                    style="background-image: url('{% static "images/slides/slide-3-mobile.jpg" %}')"></div>
+                                <div class="block-slideshow__slide-content">
+                                    <div class="block-slideshow__slide-title">One more<br>Unique header</div>
+                                    <div class="block-slideshow__slide-text">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis
+                                        molestie.</div>
+                                    <div class="block-slideshow__slide-button"><span
+                                            class="btn btn-primary btn-lg">Shop Now</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .block-slideshow / end -->
+
+    <!-- .block-features -->
+    <div class="block block-features block-features--layout--classic">
+        <div class="container">
+            <div class="block-features__list">
+                <div class="block-features__item">
+                    <div class="block-features__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                          </svg>
+                    </div>
+                    <div class="block-features__content">
+                        <div class="block-features__title">Free Shipping</div>
+                        <div class="block-features__subtitle">For orders from $50</div>
+                    </div>
+                </div>
+                <div class="block-features__divider"></div>
+                <div class="block-features__item">
+                    <div class="block-features__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg>
+                    </div>
+                    <div class="block-features__content">
+                        <div class="block-features__title">Support 24/7</div>
+                        <div class="block-features__subtitle">Call us anytime</div>
+                    </div>
+                </div>
+                <div class="block-features__divider"></div>
+                <div class="block-features__item">
+                    <div class="block-features__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                            <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </div>
+                    <div class="block-features__content">
+                        <div class="block-features__title">100% Safety</div>
+                        <div class="block-features__subtitle">Only secure payments</div>
+                    </div>
+                </div>
+                <div class="block-features__divider"></div>
+                <div class="block-features__item">
+                    <div class="block-features__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                            <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                            <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+                          </svg>
+                    </div>
+                    <div class="block-features__content">
+                        <div class="block-features__title">Hot Offers</div>
+                        <div class="block-features__subtitle">Discounts up to 90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .block-features / end -->
+
+    <!-- .Featured-products-carousel -->
+    {% include 'snippets/feature-product.html' %}
+    <!-- .Featured-products-carousel / end -->
+
+    <!-- .block-banner -->
+    <div class="block block-banner">
+        <div class="container"><a href="#" class="block-banner__body">
+                <div class="block-banner__image block-banner__image--desktop"
+                    style="background-image: url('{% static "images/banners/banner-1.jpg" %}')"></div>
+                <div class="block-banner__image block-banner__image--mobile"
+                    style="background-image: url('{% static "images/banners/banner-1-mobile.jpg" %}')"></div>
+                <div class="block-banner__title">Hundreds<br class="block-banner__mobile-br">Hand Tools</div>
+                <div class="block-banner__text">Hammers, Chisels, Universal Pliers, Nippers, Jigsaws, Saws</div>
+                <div class="block-banner__button"><span class="btn btn-sm btn-primary">Shop Now</span></div>
+            </a></div>
+    </div>
+    <!-- .block-banner / end -->
+
+    <!-- .block-products -->
+    {% include 'snippets/bestseller-product.html' %}
+    <!-- .block-products / end -->
+
+    <!-- .popular-categories -->
+    {% include "snippets/popular-category.html" %}
+    <!-- .popular-categories / end -->
+
+    <!-- .block-products-carousel -->
+    {% include "snippets/newarrivals.html" %}
+    <!-- .block-products-carousel / end -->
+
+    <!-- .block-posts -->
+    {% include "snippets/letest-news.html" %}
+    <!-- .block-posts / end -->
+
+    <!-- .block-brands -->
+    <div class="block block-brands">
+        <div class="container">
+            <div class="block-brands__slider">
+                <div class="owl-carousel">
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-1.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-2.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-3.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-4.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-5.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-6.png" alt=""></a>
+                    </div>
+                    <div class="block-brands__item"><a href="#"><img src="images/logos/logo-7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .block-brands / end -->
+
+    <!-- .block-product-columns -->
+    {% include "snippets/top-bestseller-product.html" %}
+    <!-- .block-product-columns / end -->
+
+</div><!-- site__body / end -->
+{% endblock content %}

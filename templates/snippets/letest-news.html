@@ -1,0 +1,51 @@
+{% load static %}
+<div class="block block-posts block-posts--layout--list-sm" data-layout="list-sm">
+    <div class="container">
+        <div class="block-header">
+            <h3 class="block-header__title">Latest News</h3>
+            <div class="block-header__divider"></div>
+            <div class="block-header__arrows-list"><button
+                    class="block-header__arrow block-header__arrow--left" type="button"><svg width="7px"
+                        height="11px">
+                        <use xlink:href="images/sprite.svg#arrow-rounded-left-7x11"></use>
+                    </svg></button> <button class="block-header__arrow block-header__arrow--right"
+                    type="button"><svg width="7px" height="11px">
+                        <use xlink:href="images/sprite.svg#arrow-rounded-right-7x11"></use>
+                    </svg></button></div>
+        </div>
+        <div class="block-posts__slider">
+            <div class="owl-carousel">
+                <div class="post-card">
+                    <div class="post-card__image"><a href="#"><img src="{% static 'images/posts/post-1.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post-card__info">
+                        <div class="post-card__category"><a href="#">Special Offers</a></div>
+                        <div class="post-card__name"><a href="#">Philosophy That Addresses Topics Such As
+                                Goodness</a></div>
+                        <div class="post-card__date">October 19, 2019</div>
+                        <div class="post-card__content">In one general sense, philosophy is associated with
+                            wisdom, intellectual culture and a search for knowledge. In that sense, all
+                            cultures...</div>
+                        <div class="post-card__read-more"><a href="#" class="btn btn-secondary btn-sm">Read
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-card__image"><a href="#"><img src="{% static 'images/posts/post-2.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post-card__info">
+                        <div class="post-card__category"><a href="#">Latest News</a></div>
+                        <div class="post-card__name"><a href="#">Logic Is The Study Of Reasoning And
+                                Argument Part 2</a></div>
+                        <div class="post-card__date">September 5, 2019</div>
+                        <div class="post-card__content">In one general sense, philosophy is associated with
+                            wisdom, intellectual culture and a search for knowledge. In that sense, all
+                            cultures...</div>
+                        <div class="post-card__read-more"><a href="#" class="btn btn-secondary btn-sm">Read
+                                More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

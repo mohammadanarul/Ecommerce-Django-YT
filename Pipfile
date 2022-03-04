@@ -4,9 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==4.0"
+asgiref = "==3.5.0"
+"backports.zoneinfo" = "==0.2.1"
+sqlparse = "==0.4.2"
+tzdata = "==2021.5"
+Django = "==4.0"
+django-mptt = "*"
+django-taggit = "*"
+django-ckeditor = "*"
+pillow = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.10"

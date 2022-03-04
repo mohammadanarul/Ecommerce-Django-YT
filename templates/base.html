@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Online Shop | {% block head_title %}{% endblock head_title %}</title>
+    {% include 'snippets/js-css.html' %}
+</head>
+
+<body>
+    <!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content"></div>
+        </div>
+    </div><!-- quickview-modal / end -->
+    {% include "snippets/mobile-menu.html" %}
+    <!-- site -->
+    <div class="site">
+        {% include "snippets/header.html" %}
+
+        {% block content %}
+          
+        {% endblock content %}
+
+        <!-- site__footer -->
+        {% include "snippets/footer.html" %}
+        <!-- site__footer / end -->
+    </div><!-- site / end -->
+
+</body>
+
+</html>
